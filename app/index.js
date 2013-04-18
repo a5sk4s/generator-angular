@@ -149,7 +149,7 @@ Generator.prototype.bootstrapFiles = function bootstrapFiles() {
   }
 
   if (this.bootstrap || this.compassBootstrap) {
-    // this.directory('images', 'app/images');
+    this.directory('images', 'app/images');
   }
 };
 
@@ -161,4 +161,5 @@ Generator.prototype.packageFiles = function () {
   this.template('../../templates/common/component.json', 'component.json');
   this.template('../../templates/common/package.json', 'package.json');
   this.template('../../templates/common/Gruntfile.js', 'Gruntfile.js');
+  this.template('../../templates/common/readme.md', 'readme.md');
 };
